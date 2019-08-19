@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  sc-auto-complete-front:
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev     
+    image: felipegirotti/sc-auto-complete-front
+    container_name: sc-auto-complete-front    
+    restart: unless-stopped    
+    tty: true
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=development

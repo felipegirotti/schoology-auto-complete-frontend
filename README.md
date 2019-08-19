@@ -1,3 +1,30 @@
+# Schoology Auto-Complete Frontend
+Congrats, you’ve got an api you can call, now build a front-end to show off that data. We use react with typescript. If you aren’t comfortable with typescript or react, then vue.js or angular will be fine. We will be changing this in Part 3, so pick something you are comfortable with. 
+
+ 
+
+There is not a lot of guidance provided for this part, we are looking for an autocomplete component we could use in our site. Again, given the caveat that there is a finite time period in which you have to develop it.
+
+Here you have some choices with how to spend your time. If you are great a CSS, then spend more time making it look very good. If your skills lay elsewhere, then just do a minimal job styling and show off in your stronger area.
+
+ 
+
+Again, be sure a Schoology employee has a document showing them the exact steps they’d need to use to get your auto-complete up and running on their machine. This means hitting a url in their browser to return data to the UI.
+
+## The project
+The project was build using ReactJS, the chosen it's much easier to work, have a huge community, the components should be create for extremally easy and reuse for entire project.  
+
+There one component, `component/AutoComplete` to handle with.       
+The `service/api.js` handle with all connection of external api.    
+
+I keep it simple, my main focus is backend, devops, but I handle with frontend.
+
+## Run local
+You may need configure the environment variables, there the file of example `.env.example`, create a file `.env` (`cp .env.example .env`)       
+For run local by docker just run `docker-compose up -d`, and access by `http://localhost:3001`
+
+
+## React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
