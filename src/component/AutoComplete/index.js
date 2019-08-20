@@ -117,6 +117,7 @@ export default class AutoComplete extends Component {
             <Fragment>
                 <input
                     type="text"
+                    placeholder="e.g type: New"
                     onChange={onChange}
                     onKeyDown={onKeyDown}
                     value={userInput}
